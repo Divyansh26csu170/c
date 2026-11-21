@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int rectangleArea(int length, int width) {
+    if (length <= 0 || width <= 0) {
+        return 0;
+    }
+
+    return length * width;
+}
+
+int main() {
+    int length, width;
+
+    scanf("%d %d", &length, &width);
+
+    printf("%d\n", rectangleArea(length, width));
+
+    return 0;
+}
